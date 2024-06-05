@@ -1,0 +1,666 @@
+/*================================================================================
+	Item Name: Frest HTML Admin Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+/* Open+Sans from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.action {
+    height: 20px;
+    width: 30px;
+}
+
+.action i {
+    font-size: 12px !important;
+    padding: 10px 15px 10px 15px !important;
+    color: white;
+    border-radius: 10px;
+}
+
+.fa-edit {
+    background: #124bdb;
+}
+
+.fa-trash-alt {
+    margin-left: 15px;
+    background: #ed2213;
+}
+
+.action_width {
+    width: 150px !important;
+}
+
+.fa-edit:hover,
+.fa-trash-alt:hover {
+    background: white;
+    color: black;
+    transition: ease .3s;
+}
+
+.fa-eye {
+    font-size: 20px;
+}
+
+.active_url {
+    color: #d93b72;
+}
+
+.back-option h1 .fa-chevron-right {
+    font-size: 11px;
+    /* color: blue; */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.back-option h1 .fa-home {
+    font-size: 14px;
+    /* color: blue; */
+}
+
+.back-option h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.5px;
+}
+
+.cu_header {
+    display: flex !important;
+}
+
+.cu_header h1 {
+    align-items: center !important;
+    border: .2px solid blue !important;
+    padding: 10px 10px 10px 10px;
+    font-size: 17px;
+}
+
+.header-cu {
+    text-align: center !important;
+}
+
+.cu_active {
+    color: white;
+    background: #345eeb;
+}
+
+label {
+    font-weight: 700 !important;
+}
+
+.header_cp {
+    font-weight: 700;
+    color: #d99818;
+}
+
+.pack-edit-delete a {
+    border: .5px solid #ede7e6;
+    padding: 5px;
+}
+
+.pack-edit-delete p .edit:hover {
+    border: .5px solid #1cb026 !important;
+    padding: 5px;
+}
+
+.pack-edit-delete p .delete:hover {
+    border: .5px solid red !important;
+    padding: 5px;
+}
+
+.pack-edit-delete {
+    position: absolute;
+    left: 75px;
+    margin-top: 40px !important;
+}
+
+.pack-edit-delete i {
+    background: none !important;
+}
+
+.border .date p {
+    font-size: 10px !important;
+}
+
+.border .date span {
+    background-color: #4284f5;
+    color: white;
+    padding: 5px 7px 5px 7px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.b_no p {
+    font-size: 10px !important;
+}
+
+.b_no p span {
+    background-color: #4284f5;
+    color: white;
+    position: absolute;
+    right: 38px;
+    padding: 1px 7px 1px 7px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.acc-head p {
+    font-size: 13px;
+}
+
+.status_select select {
+    font-size: 12px;
+    height: 30px;
+    max-width: 200px;
+}
+
+.update_status .btn-primary {
+    padding: 2px 7px 2px 7px;
+    font-size: 12px;
+}
+
+
+/* .card {
+    min-height: 430px !important;
+} */
+
+.pack-edit p {
+    cursor: pointer;
+}
+
+.pack-edit p:hover {
+    color: black;
+}
+
+.pack-edit p i {
+    background: none !important;
+}
+
+.image_cu img {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map {
+    height: 400px;
+    width: 400px;
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.company_table .eye {
+    margin-top: 4px !important;
+    border: 1px solid white !important;
+    font-size: 18px;
+    padding: 2px 3px 2px 3px;
+}
+
+.company_table .edit {
+    margin-top: 4px !important;
+    border: 1px solid white !important;
+    font-size: 18px;
+    background: none !important;
+    padding: 2px 3px 2px 3px;
+}
+
+.company_table .delete {
+    margin-left: -1px;
+    margin-top: 4px !important;
+    border: 1px solid white !important;
+    font-size: 18px;
+    background: none !important;
+    padding: 2px 3px 2px 3px;
+}
+
+.company_table .eye:hover {
+    background-color: #2a56d1;
+    color: white;
+    transition: ease .8s;
+    border-radius: 5px;
+}
+
+.brand-text {
+    color: #edb021 !important;
+}
+
+.company_table .edit:hover {
+    background-color: #3bb85e !important;
+    color: white;
+    transition: ease .8s;
+    border-radius: 5px;
+}
+
+.brand-logo img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.company_table .delete:hover {
+    background-color: #e32b44 !important;
+    color: white;
+    transition: ease .8s;
+    border-radius: 5px;
+}
+
+.add_image {
+    display: flex;
+}
+
+.view_edit {
+    position: absolute;
+    right: 20px;
+}
+
+.view_edit a .fa-eye {
+    margin-right: 10px;
+    color: #1268c4;
+    background: none !important;
+}
+
+.view_edit a .fa-edit {
+    margin-top: -5px !important;
+    color: #1268c4;
+    background: none !important;
+}
+
+.delete_add {
+    position: absolute !important;
+    left: 100px !important;
+    bottom: 0px;
+}
+
+.center_main {
+    justify-content: center !important;
+}
+
+.center_main .border {
+    width: 280px;
+    height: 200px;
+}
+
+.center_main .border {
+    text-align: center !important;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.center_main .border:hover {
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+    transition: ease .3s;
+}
+
+.center_main .border i {
+    border-radius: 50%;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.center_main .border h1 {
+    font-size: 20px;
+}
+
+.pack-head .add_bu {
+    position: absolute;
+    right: 30px;
+    width: 120px;
+}
+
+.for_vendor i {
+    color: #7ef52f;
+    /* background-color: blue; */
+    padding: 10px;
+}
+
+.for_user h1 {
+    color: black;
+}
+
+.for_vendor h1 {
+    color: black;
+}
+
+.for_vendor h2 {
+    font-size: 23px;
+    color: black;
+}
+
+.for_user h2 {
+    font-size: 23px;
+    color: black;
+}
+
+.for_user i {
+    /* background-color: white; */
+    /* border: 1px solid blue; */
+    padding: 10px;
+    color: #cc28fa;
+}
+
+.center_main .for_user {
+    background-color: #FCEEE5;
+    border-radius: 10px;
+}
+
+.center_main .for_vendor {
+    background-color: #FCEEE5;
+    border-radius: 10px;
+}
+
+.priority_input {
+    margin-top: 10px !important;
+}
+
+.delete_product {
+    position: absolute;
+    left: 150px;
+    margin-top: -45px;
+}
+
+.delete_product_image {
+    position: absolute;
+    left: 110px;
+    margin-top: -45px;
+}
+
+.admin_home_bottom {
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.admin_home_bottom h1 {
+    font-size: 17px;
+}
+
+.verify_vendor_top {
+    margin-top: 10px;
+}
+
+.b_count {
+    color: #aa0bd6;
+    font-size: 20px;
+}
+
+@media(max-width:753px) {
+    .center_main .border {
+        width: 100% !important;
+        height: auto;
+    }
+    .for_vendor {
+        margin-top: 10px;
+    }
+    .center_main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.number_of {
+    -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.12) !important;
+    border: none !important;
+}
+
+.tendor_action_ad {
+    display: flex !important;
+}
+
+.tendor_action_ad .fa-eye {
+    margin-left: 6px;
+}
+
+.tendor_action_ad .fa-edit {
+    background: none !important;
+}
+
+.tendor_view h1 {
+    font-size: 17px;
+    color: blue;
+}
+
+.tendor_view p {
+    font-size: 14px;
+}
+
+.cu_tendor_detail p {
+    margin-top: -5px;
+}
+
+.tendor_category {
+    display: flex;
+}
+
+.sub_cat_admin {
+    margin-left: 50px;
+}
+
+.center_main .border_one {
+    width: 230px;
+    height: 120px;
+}
+
+.center_main .border_one {
+    text-align: center !important;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+}
+
+.center_main .border_one:hover {
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+    transition: ease .3s;
+}
+
+.center_main .border_one i {
+    border-radius: 50%;
+    font-size: 25px;
+    margin-top: 25px;
+    color: white;
+}
+
+.center_main .border_one {
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.center_main .border_one h1 {
+    font-size: 16px;
+    color: white;
+}
+
+.center_main .border_one h2 {
+    font-size: 18px !important;
+    margin-bottom: 25px !important;
+    color: white;
+}
+
+.center_main .cuview {
+    background-color: #d667f5;
+}
+
+.center_main .noview {
+    background-color: #7babc7;
+}
+
+.center_main .vendorview {
+    background-color: #1f7af0;
+}
+
+.bg_card {
+    background-color: #E0E6E9;
+}
+
+.bg_card .border {
+    border: none !important;
+}
+
+.edit_tendor .fa-edit {
+    background-color: #437ce6 !important;
+    margin-left: 30px;
+    color: white;
+    font-size: 10px;
+    padding: 10px 35px 10px 35px;
+    border-radius: 10px;
+    border: 1px solid #437ce6;
+    -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.action_tendor i {
+    background-color: #e64b43 !important;
+    color: white !important;
+    font-size: 10px;
+    padding: 10px 35px 10px 35px;
+    border-radius: 10px;
+    border: 1px solid #e64b43;
+    color: black;
+    -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.action_tendor i:hover {
+    background-color: white !important;
+    transition: ease .4s;
+    color: black !important;
+}
+
+.edit_tendor .fa-edit:hover {
+    background-color: white !important;
+    transition: ease .4s;
+    color: black !important;
+}
+
+.eye_icon .fa-eye:hover {
+    background-color: #33ccd4 !important;
+    transition: ease .4s;
+    color: white !important;
+}
+
+.eye_icon .fa-eye {
+    color: white !important;
+    font-size: 11px !important;
+    padding: 5px 10px 3px 10px;
+    border-radius: 10px;
+    border: 1px solid #33ccd4;
+    color: #33ccd4 !important;
+    background-color: white !important;
+    -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.edit_icon .fa-edit:hover {
+    background-color: #437ce6 !important;
+    transition: ease .4s;
+    color: white !important;
+}
+
+.edit_icon .fa-edit {
+    background-color: white !important;
+    color: white !important;
+    font-size: 11px !important;
+    padding: 5px 10px 3px 10px;
+    border-radius: 10px;
+    border: 1px solid #437ce6;
+    color: #437ce6 !important;
+    -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.delete_icon .fa-trash-alt:hover {
+    background-color: #eb5752 !important;
+    transition: ease .4s;
+    color: white !important;
+}
+
+.delete_icon .fa-trash-alt {
+    background-color: white !important;
+    font-size: 11px !important;
+    padding: 5px 10px 3px 10px;
+    border-radius: 10px;
+    border: 1px solid #eb5752;
+    color: #eb5752 !important;
+    margin-left: 0px !important;
+    -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.page-head h1 {
+    font-size: 28px;
+    color: #496be6;
+}
+
+.active_admin_url {
+    background-color: #ffffff !important;
+    border-radius: 5px;
+    width: 100%;
+    color: white !important;
+}
+
+body{
+    background: #36394B;
+    height: 100%;
+  }
+  
+  #container{
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+
+
+
+  .anal_head{
+      display: flex;
+  }
+  .anal_head h1{
+      font-size: 18px;
+  }
+  .anal_head h1 i {
+    font-size: 10px;
+    background-color: rgb(122 109 109);
+    border-radius: 50%;
+    padding: 1px 6px 1px 4px;
+    margin-left: 5px;
+    color: white;
+}
+
+.header_li p{
+    font-size: 24px;
+    text-align: center;
+}

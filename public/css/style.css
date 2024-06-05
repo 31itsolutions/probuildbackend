@@ -1,0 +1,26 @@
+/* login head */
+
+.td-login {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.td-login a {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.login_active{
+    color: white !important;
+    background-color: blue !important;
+    padding: 2px 5px 5px 5px;
+    border-radius: 5px; 
+}
+
+/* jome page form-select */
+
+.form-content{
+    margin-left: 26px !important;
+}

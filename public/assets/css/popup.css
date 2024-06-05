@@ -1,0 +1,82 @@
+.package_popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content_box{
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    z-index: 10000;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+}
+
+.content_box .imgb{
+    display: flex;
+    position: relative;
+    height: 400px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_box .imgb img{
+    border: none !important;
+    position: relative;
+    height: fit-content;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.content_package h4{
+    margin-top: 40px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 22px;
+
+}
+
+.content_package h5{
+    text-align: center;
+    margin-top: 30px;
+    color: blue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    
+}
+.content_package h4 b{
+    color: rgb(230, 164, 24);
+}
+.content_package p{
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+.content_package{
+    width: 300px;
+    height: 400px;
+text-align: center;
+justify-content: center;
+align-items: center;
+background: cornsilk;
+}
+
+.click_area{
+    
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+}
+
+.click_area a{
+    margin-left: 30px;
+}
+.click_area .close{
+    font-size: 17px ;
+    font-weight: 400 !important;
+}
